@@ -20,7 +20,27 @@ while($row_chitiet = mysqli_fetch_array($query_chitiet)){
 		</form>
 		
 	</div>
+	<div class="clear"></div>
+	<div class="tabs">
+		<ul id="tabs-nav">
+			<li><a href="#tab1">Thông Số Kỹ Thuật</a></li>
+			<li><a href="#tab2">Nội Dung Chi Tiết</a></li>
+			<li><a href="#tab3">Hình Ảnh</a></li>
+		</ul> <!-- END tabs-nav -->
+		<div id="tabs-content">
+			<div id="tab1" class="tab-content">
+				<?php echo $row_chitiet['tomtat'] ?>
+			</div>
+			<div id="tab2" class="tab-content">
+				<?php echo $row_chitiet['noidung'] ?>
+			</div>
+			<div id="tab3" class="tab-content">
+				<img width="50%" src="ADMIN/module/quanlysanpham/uploads/<?php echo $row_chitiet['hinhanh'] ?>">
+			</div>
+		</div> <!-- END tabs-content -->
+	</div> <!-- END tabs -->
 
 	<?php
 }
 ?>
+<script type="text/javascript" src="../../../app.js"></script>

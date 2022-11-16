@@ -80,7 +80,7 @@ ul.list_menu li {
 
 ul.list_menu {
     padding: 0;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     /* border: 1px solid #000; */
     list-style: none;
@@ -105,7 +105,7 @@ ul.list_menu li:hover {
 
 .sidebar{
 	border: 1px solid #000099;
-	height: 390px;
+	height: auto;
 	width: 19%;
 	margin-top: 5px;
 	margin-left: 5px;
@@ -206,3 +206,55 @@ p.footer_copyright {
     color: #000;
 }
 
+ul.baiviet{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.baiviet li {
+    margin: 10;
+    border: 1px solid;
+}
+
+.baiviet_hinhanh{
+    text-align: center;
+}
+
+/* Tabs */
+.tabs {
+    width: 100%;
+    background-color: orange;
+    border-radius: 5px 5px 5px 5px;
+}
+ul#tabs-nav {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  overflow: auto;
+}
+ul#tabs-nav li {
+  float: left;
+  font-weight: bold;
+  margin-right: 2px;
+  padding: 8px 10px;
+  border-radius: 5px 5px 5px 5px;
+  /*border: 1px solid #d5d5de;
+  border-bottom: none;*/
+  cursor: pointer;
+}
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+  background-color: orangered;
+}
+#tabs-nav li a {
+  text-decoration: none;
+  color: #FFF;
+}
+.tab-content {
+  padding: 10px;
+  border: 5px solid orange;
+  background-color: #FFF;
+}
+
+/* Just for CodePen styling - don't include if you copy paste */

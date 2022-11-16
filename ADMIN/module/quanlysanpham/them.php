@@ -23,11 +23,11 @@
 		</tr>
 		<tr>
 			<td>Tóm Tắt</td>
-			<td><textarea rows="10" name="tomtat" style="resize: none;"></textarea></td>
+			<td><textarea rows="10" name="tomtat" id="tomtat" ></textarea></td>
 		</tr>
 		<tr>
 			<td>Nội Dung</td>
-			<td><textarea rows="10" name="noidung" style="resize: none;"></textarea></td>
+			<td><textarea rows="10" name="noidung" id="noidung"></textarea></td>
 		</tr>
 		<tr>
 			<td>Danh Mục Sản Phẩm</td>

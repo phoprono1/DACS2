@@ -34,7 +34,6 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
 	<tr>
 		<td colspan="6">
 			<p>Tổng Tiền: <?php echo number_format($tongtien,0,',','.').'VND' ?></p>
-			<p><a href="">Đã xử lý</a></p>
 		</td>
 	</tr>
 </table>

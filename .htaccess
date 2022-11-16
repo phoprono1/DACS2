@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteRule "index.html" "index.php"
+
+RewriteRule "index.html" "index.php"
+
+RewriteRule "index.html" "index.php"
+
+RewriteRule "^([a-zA-Z0-9]+).html$" "?quanly=$1"
+
+RewriteRule "^danh-muc/([0-9]+).html$" "index.php?quanly=danhmucsanpham&id=$1"
+
+RewriteRule "^san-pham/([0-9]+).html$" "index.php?quanly=sanpham&id=$1"

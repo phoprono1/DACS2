@@ -13,6 +13,7 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
 		<th>Email</th>
 		<th>Số điện thoại</th>
 		<th>Tình Trạng</th>
+		<th>Ngày Đặt</th>
 		<th>Quản lý</th>
 	</tr>
 	<?php
@@ -32,10 +33,11 @@ $query_lietke_dh = mysqli_query($mysqli, $sql_lietke_dh);
 				if($row['cart_status']==1){
 					echo '<a href="module/quanlydonhang/xuly.php?cart_status=0&code='.$row['code_cart'].'">Đơn Hàng Mới</a>';
 				}else{
-					echo '<a href="module/quanlydonhang/xuly.php?cart_status=1&code='.$row['code_cart'].'">Đã Xử Lý</a>';
+					echo 'Đã Xử Lý';
 				}
 				?>
 			</td>
+			<td><?php echo $row['cart_date'] ?></td>
 			<td>
 				<a href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row['code_cart']?>">Xem đơn hàng</a>
 			</td>
